@@ -1,23 +1,23 @@
 <html>
 <head>
-<script lenguaje="javascript" type="text/javascript">
-var number
-function calculoIMC(){
-var peso=number(prompt("ingrese peso"))
-var altura=number(prompt("ingreso altura"))
-var IMC= peso/(altura*altura)
-if(IMC>30)
-alert("esta con sobrepeso")
-else if (IMC>25)
-alert ("esta gordo")
-else if (IMC>17.9)
-alert ("esta bien")
-else if (IMC<17.9)
-alert ("esta flaco")
+<script language="javascript" type="text/javascript">
+function calculoIMC() {
+var peso = parseFloat(prompt("Ingrese peso"));
+var altura = parseFloat(prompt("Ingrese altura"));
+var IMC = peso / (altura * altura);
+
+if (IMC > 30)
+alert("Está con sobrepeso");
+else if (IMC > 25)
+alert("Está gordo");
+else if (IMC > 17.9)
+alert("Está bien");
+else if (IMC < 17.9)
+alert("Está flaco");
 }
 </script>
 </head>
 <body>
-<input type="buttom onclick="calculoIMC" value="calcularIMC" />
+<input type="button" onclick="calculoIMC()" value="Calcular IMC" />
 </body>
 </html>
